@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "HN Avatars",
+  "version": "1.0",
+  "description": "Adds GitHub Identicons to HN comments",
+  "icons": {
+    "48": "icons/y48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://news.ycombinator.com/*"
+      ],
+      "js": [
+        "out/index.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}

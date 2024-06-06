@@ -1,0 +1,14 @@
+{
+    "name": "hn-avatars",
+    "module": "src/index.ts",
+    "type": "module",
+    "scripts": {
+        "go": "bun build ./src/index.ts --target=browser --outfile=./out/index.js"
+    },
+    "peerDependencies": {
+        "typescript": "^5.0.0"
+    },
+    "dependencies": {
+        "@qwtel/blockies": "github:qwtel/blockies"
+    }
+}
