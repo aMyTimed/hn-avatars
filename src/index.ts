@@ -83,6 +83,8 @@ body > center > table > tbody > tr:first-child > td {
     gap: 0.2rem;
 }
 
+
+
 .custom-content .title {
     color: #ffffff;
 }
@@ -95,6 +97,10 @@ body > center > table > tbody > tr:first-child > td {
     gap: 0.2rem;
 }
 
+.custom-content .author:hover {
+    text-decoration: underline;
+}
+
 .custom-content .author svg {
     width: 14px;
     height: 14px;
@@ -105,10 +111,19 @@ body > center > table > tbody > tr:first-child > td {
     color: #ffffffc0;
 }
 
+.custom-content .time {
+    font-size: 0.8rem;
+    color: #ffffffc0;
+}
+
 .row {
     display: flex;
     gap: 0.5rem;
     align-items: center;
+}
+
+.realthing:hover {
+    background-color: #3d3d3d;
 }
 
 `;
@@ -224,6 +239,7 @@ document.addEventListener("DOMContentLoaded", () => {
             newDiv.style.alignItems = "flex-start";
             newDiv.style.flexDirection = "row";
             newDiv.style.gap = "0.5rem";
+            newDiv.className = "realthing";
             newDiv.innerHTML = `
             <!-- votes first -->
             <div class="custom-votes">
